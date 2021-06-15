@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+
+    <div class="container my-5">
+        <div class="shadow w-50 m-auto card p-4">
+            <label for="ProductName">ProductName</label>
+            <input type="text" class="form-control" id="ProductName">
+            <label for="ProductCategory">ProductCategory</label>
+            <input type="text" class="form-control" id="ProductCategory">
+            <label for="ProductPrice">ProductPrice</label>
+            <input type="text" class="form-control" id="ProductPrice">
+            <label for="ProductDescription">ProductDescription</label>
+            <textarea class="form-control" id="ProductDescription" cols="30" rows="10"></textarea>
+            <button onclick="getFormData()" class="btn btn-info my-5">Add Product</button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="w-25 m-auto">
+            <input class="form-control" type="text" placeholder="search...">
+
+        </div>
+
+        <table class="table text-center table-hover my-5">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>description</th>
+                <th>delete</th>
+                <th>upadte</th>
+            </thead>
+            <tbody id="demo">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
